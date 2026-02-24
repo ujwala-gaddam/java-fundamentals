@@ -5,7 +5,7 @@ public class ProductInput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter productId:");
-        byte productid = scanner.nextByte();//
+        byte product_id = scanner.nextByte();//
         System.out.println("Enter name");
         String productName = scanner.next();
         System.out.println("Enter manufacturedYear");
@@ -18,17 +18,16 @@ public class ProductInput {
         double finalPrice = scanner.nextDouble();
         System.out.println("Enter category");
         char category =scanner.next().charAt(0);
-        System.out.println("is product Avaliabe(true/false");
+        System.out.println("is product Avaliabe(true/false)");
         boolean productAvaliable = scanner.nextBoolean();
-        System.out.println();
-
-
-
-
-
-
-
-
+        System.out.println("Product_id:"+ product_id);
+        System.out.println("productName:"+ productName);
+        System.out.println("manufacturedYear:"+ manufactured_year);
+        System.out.println("maxRetailprice:"+ maxRetailPrice);
+        System.out.println("Discount Percentage:"+ discountPercentage);
+        System.out.println("finalPrice:"+ finalPrice);
+        System.out.println("category:"+ category);
+        System.out.println("productAvailable:"+ productAvaliable);
 
     }
 }
